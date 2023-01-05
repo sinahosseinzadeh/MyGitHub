@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub</title>
+    <link rel="stylesheet" href="design.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!--the left card which contains profilepic + name + location + blog-->
+        <div class="card1" id="card1" style="display: none;">
+            <fieldset class="fieldset">
+                <!--when there is zero result and there is no profile with the username u entered-->
+                <div id="error" style="display:none">
+                    <h3>Profile Not found</h3>
+                </div>
+                <div class="firstinfo" id="result">
+                    <!--github profile picture-->
+                    <div class="proimg">
+                        <img  id="profile_picture" style="width:30%;border-radius: 100px;
+                        float: left;" src="">
+                    </div>
+                    <!--name + location + blog-->
+                    <div class="namelocblog">
+                        <h2 id="name"></h2>
+                        <h4 id="location"></h4>
+                        <h4 id="blog"></h4>
+                    </div>
+                    <br><br><br><br><br><br>
+                    <!--separated bio because i wnated to align and float it somewhere else-->
+                    <div class="bioinfo">
+                        <h4 id="bio" style="float: left;"></h4>
+                    </div>
+                </div>
+                
+            </fieldset>
+        </div>
+        <!--the right card which contains the search input and a submit button-->
+        <div class="card2">
+                <fieldset class="fieldset">
+                    <br><br><br><br><br><br>
+                    <p id="alert"></p>
+                    <input id="username" type="text" placeholder="Username">
+                    <button id="btn" type="button" class="submit button">submit</button>
+                    <br><br><br><br><br><br>
+                </fieldset>
+        </div>
+    </div>
+    <script src="indexjs.js"></script>
+</body>
+
+</html>

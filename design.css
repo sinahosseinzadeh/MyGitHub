@@ -1,0 +1,79 @@
+/*
+the backhgroud wallpaper + size of it
+*/
+body{
+    background-image: url("github.jpg");
+    background-size: cover;
+}
+/*
+the grey box which contains both side
+*/
+.container{
+    width: 50%;
+    min-height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(186, 183, 183);
+    opacity: 0.6;
+    padding: 20px;
+    z-index: 100;
+}
+/*
+github's name location and blog related to the username
+*/
+.namelocblog{
+    float: right;
+}
+/*
+the biography related to the username
+*/
+.bioinfo {
+    padding: 25px;
+    border-collapse: collapse;
+    white-space: pre-line;
+    margin: 10%;
+}
+/*
+just a lil width change for the left card to fit better in the grey box
+*/
+.card1{
+    width: 63%;
+}
+/*
+again a lil width change but this time for the right card
+*/
+.card2{
+    width: 175px;
+}
+/*
+for both cards 
+*/
+.fieldset{
+    padding: 7px;
+    border-radius: 10px;
+    background-color: white;
+}
+/*
+submit button in the right card
+*/
+.button{
+    width: 165px;
+    height: 25px;
+    text-align: center;
+    margin: 4px;
+    background-color:  white;
+    color: black;
+    border-radius: 10px;
+    border-color: blueviolet;
+}
